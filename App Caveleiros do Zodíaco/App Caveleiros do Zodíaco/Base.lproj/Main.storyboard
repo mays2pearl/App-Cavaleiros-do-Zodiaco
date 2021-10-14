@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vcr-Xm-VxW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Gip-yY-Cve">
+            <objects>
+                <viewController id="vcr-Xm-VxW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mPh-cp-afR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12 cavaleiros" translatesAutoresizingMaskIntoConstraints="NO" id="E0J-Ho-Zip">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.82873576879999999" green="0.72887343169999996" blue="0.23525640370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cavaleirosLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EaN-k4-elB">
+                                <rect key="frame" x="84" y="97" width="310" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="Ycu-Mj-qBd"/>
+                                    <constraint firstAttribute="width" constant="310" id="jj9-gK-Ees"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlQ-8b-5r0">
+                                <rect key="frame" x="7" y="563" width="400" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
+                                <size key="titleShadowOffset" width="0.0" height="2"/>
+                                <state key="normal" title="Conheça os 12 Cavaleiros de ouro">
+                                    <color key="titleColor" red="0.82873576879999999" green="0.72887343169999996" blue="0.23525640370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Frv-Nn-kzN" kind="show" id="Z7g-8g-foH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fqJ-wu-K2B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="E0J-Ho-Zip" firstAttribute="trailing" secondItem="fqJ-wu-K2B" secondAttribute="trailing" id="5Z9-EB-mmu"/>
+                            <constraint firstItem="hlQ-8b-5r0" firstAttribute="leading" secondItem="fqJ-wu-K2B" secondAttribute="leading" constant="7" id="L6M-nm-NH9"/>
+                            <constraint firstItem="hlQ-8b-5r0" firstAttribute="top" secondItem="EaN-k4-elB" secondAttribute="bottom" constant="330" id="PQp-L6-rND"/>
+                            <constraint firstItem="EaN-k4-elB" firstAttribute="leading" secondItem="fqJ-wu-K2B" secondAttribute="leading" constant="84" id="YMK-nZ-dFg"/>
+                            <constraint firstItem="E0J-Ho-Zip" firstAttribute="leading" secondItem="fqJ-wu-K2B" secondAttribute="leading" id="j0V-jT-gmo"/>
+                            <constraint firstItem="E0J-Ho-Zip" firstAttribute="bottom" secondItem="fqJ-wu-K2B" secondAttribute="bottom" id="pHM-q4-pzT"/>
+                            <constraint firstItem="EaN-k4-elB" firstAttribute="top" secondItem="fqJ-wu-K2B" secondAttribute="top" constant="53" id="rPC-kc-uat"/>
+                            <constraint firstItem="fqJ-wu-K2B" firstAttribute="trailing" secondItem="EaN-k4-elB" secondAttribute="trailing" constant="20" id="spK-lT-gL8"/>
+                            <constraint firstItem="fqJ-wu-K2B" firstAttribute="trailing" secondItem="hlQ-8b-5r0" secondAttribute="trailing" constant="7" id="xpW-ZN-BKY"/>
+                            <constraint firstItem="E0J-Ho-Zip" firstAttribute="top" secondItem="fqJ-wu-K2B" secondAttribute="top" id="z4N-DC-7xN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nGk-w3-yp0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9G-oJ-tAg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176.8115942028987" y="83.705357142857139"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="z45-xy-pfv">
+            <objects>
+                <viewController id="Frv-Nn-kzN" customClass="TableViewController" customModule="App_Caveleiros_do_Zodi_aco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4S-xf-OSa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aOg-g7-Rvw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bs2-m7-5G0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JT0-XH-oTz"/>
+                    <connections>
+                        <outlet property="myTableView" destination="aOg-g7-Rvw" id="4Vw-n7-OEv"/>
+                        <segue destination="0HO-6H-kkQ" kind="show" identifier="DetalhesViewController" id="6Tl-e5-CXM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jEH-Co-dzI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939" y="84"/>
+        </scene>
+        <!--Detalhes View Controller-->
+        <scene sceneID="UQV-Kb-YzZ">
+            <objects>
+                <viewController id="0HO-6H-kkQ" customClass="DetalhesViewController" customModule="App_Caveleiros_do_Zodi_aco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wz3-Ue-979">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asmita de virgem" translatesAutoresizingMaskIntoConstraints="NO" id="bft-rN-cpA">
+                                <rect key="frame" x="42" y="50" width="328" height="303"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="0Uz-dA-Dy4"/>
+                                    <constraint firstAttribute="height" constant="303" id="klK-6U-9Yv"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dji-Lg-SnQ">
+                                <rect key="frame" x="42" y="406" width="328" height="387"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5rB-Mu-ZN3"/>
+                        <color key="backgroundColor" red="0.82873576879999999" green="0.72887343169999996" blue="0.23525640370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5rB-Mu-ZN3" firstAttribute="trailing" secondItem="dji-Lg-SnQ" secondAttribute="trailing" constant="44" id="1QL-rx-d7X"/>
+                            <constraint firstItem="bft-rN-cpA" firstAttribute="leading" secondItem="5rB-Mu-ZN3" secondAttribute="leading" constant="42" id="MRp-Bh-Kta"/>
+                            <constraint firstItem="dji-Lg-SnQ" firstAttribute="leading" secondItem="5rB-Mu-ZN3" secondAttribute="leading" constant="42" id="PhL-sM-eOQ"/>
+                            <constraint firstItem="5rB-Mu-ZN3" firstAttribute="trailing" secondItem="bft-rN-cpA" secondAttribute="trailing" constant="44" id="Qhx-92-ef9"/>
+                            <constraint firstItem="bft-rN-cpA" firstAttribute="top" secondItem="5rB-Mu-ZN3" secondAttribute="top" constant="50" id="W06-ks-Dvo"/>
+                            <constraint firstItem="dji-Lg-SnQ" firstAttribute="top" secondItem="bft-rN-cpA" secondAttribute="bottom" constant="53" id="lHK-fw-khk"/>
+                            <constraint firstItem="5rB-Mu-ZN3" firstAttribute="bottom" secondItem="dji-Lg-SnQ" secondAttribute="bottom" constant="15" id="qKd-Uu-8Zy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="02g-sx-8yK"/>
+                    <connections>
+                        <outlet property="ImagemCavaleiro" destination="bft-rN-cpA" id="q8c-io-s3Z"/>
+                        <outlet property="descricaoCavaleiro" destination="dji-Lg-SnQ" id="QCw-Z2-hwv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXS-Cb-oHh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2678" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="12 cavaleiros" width="1129" height="535"/>
+        <image name="Asmita de virgem" width="760" height="398"/>
+        <image name="cavaleirosLogo" width="1280" height="544"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
