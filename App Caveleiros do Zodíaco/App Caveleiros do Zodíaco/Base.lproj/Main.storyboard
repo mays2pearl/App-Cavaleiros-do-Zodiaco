@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vcr-Xm-VxW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vcr-Xm-VxW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -70,24 +71,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aOg-g7-Rvw">
-                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aOg-g7-Rvw">
+                                <rect key="frame" x="0.0" y="51" width="414" height="757"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VPL-yh-Srj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bs2-m7-5G0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aOg-g7-Rvw" firstAttribute="bottom" secondItem="bs2-m7-5G0" secondAttribute="bottom" id="6ra-bg-QXI"/>
+                            <constraint firstItem="VPL-yh-Srj" firstAttribute="top" secondItem="bs2-m7-5G0" secondAttribute="top" id="FHH-p2-znW"/>
+                            <constraint firstItem="aOg-g7-Rvw" firstAttribute="top" secondItem="VPL-yh-Srj" secondAttribute="bottom" id="OdW-Kr-yb4"/>
+                            <constraint firstItem="aOg-g7-Rvw" firstAttribute="leading" secondItem="bs2-m7-5G0" secondAttribute="leading" id="QLR-UD-GJg"/>
+                            <constraint firstItem="VPL-yh-Srj" firstAttribute="leading" secondItem="bs2-m7-5G0" secondAttribute="leading" id="glg-Tu-ScE"/>
+                            <constraint firstItem="VPL-yh-Srj" firstAttribute="trailing" secondItem="bs2-m7-5G0" secondAttribute="trailing" id="wcD-r7-4tJ"/>
+                            <constraint firstItem="aOg-g7-Rvw" firstAttribute="trailing" secondItem="bs2-m7-5G0" secondAttribute="trailing" id="yhj-Sg-jQ8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JT0-XH-oTz"/>
                     <connections>
                         <outlet property="myTableView" destination="aOg-g7-Rvw" id="4Vw-n7-OEv"/>
+                        <outlet property="searchView" destination="VPL-yh-Srj" id="DWE-dE-FZI"/>
                         <segue destination="0HO-6H-kkQ" kind="show" identifier="DetalhesViewController" id="6Tl-e5-CXM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jEH-Co-dzI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="84"/>
+            <point key="canvasLocation" x="1937.68115942029" y="83.705357142857139"/>
         </scene>
         <!--Detalhes View Controller-->
         <scene sceneID="UQV-Kb-YzZ">

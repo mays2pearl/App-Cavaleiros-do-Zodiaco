@@ -25,9 +25,11 @@ class TableViewCell: UITableViewCell {
     }
     func  setup(value: Cavaleiros) {
         
-      
+        var filterName = nomeCavaleiro
+        
         self.imagemCavaleiro.image = UIImage(named: value.imagem)
-        self.nomeCavaleiro.text = String?(value.nome)
-    
+        self.nomeCavaleiro.text = value.nome
+        
     }
+    
 }

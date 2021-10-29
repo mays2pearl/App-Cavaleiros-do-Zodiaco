@@ -25,12 +25,12 @@ class DetalhesViewController: UIViewController {
     
     func borderImagem(){
         
-        self.descricaoCavaleiro.layer.borderWidth = 3
-        self.descricaoCavaleiro.layer.borderWidth = 3
+        self.descricaoCavaleiro.layer.borderWidth = 1
+        self.descricaoCavaleiro.layer.borderWidth = 1
         self.imagemCavaleiro.layer.cornerRadius = 0.2 * self.imagemCavaleiro.bounds.size.width
         
         self.imagemCavaleiro.clipsToBounds = true
-        self.imagemCavaleiro.layer.borderWidth = 10
+        self.imagemCavaleiro.layer.borderWidth = 2
     }
 
 }
